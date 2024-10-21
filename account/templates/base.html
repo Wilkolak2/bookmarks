@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -6,6 +7,14 @@
     <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
+<header id="header">
+    <span class="logo">Bookmarks</span>
+</header>
+<main id="content">
+    {% block content %}
+    {% endblock %}
+</main>
+
 
 </body>
 </html>
